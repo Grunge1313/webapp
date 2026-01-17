@@ -28,7 +28,7 @@
             padding: 20px;
             max-width: 600px;
             margin: 0 auto;
-            padding-bottom: 50px; /* Отступ снизу для скролла */
+            padding-bottom: 80px; /* Увеличил отступ снизу, чтобы кнопки не прилипали к краю экрана */
         }
 
         /* Экраны */
@@ -99,6 +99,13 @@
             font-size: 14px;
             display: inline-block;
         }
+        
+        /* Спец-класс для нижней кнопки, чтобы был отступ сверху */
+        .btn-back-bottom {
+            margin-top: 40px; 
+            width: 100%; /* Делаем кнопку широкой внизу для удобства */
+            text-align: center;
+        }
 
         /* Меню разделов */
         .menu-grid {
@@ -144,7 +151,8 @@
 <div class="container">
 
     <div id="screen-welcome" class="screen active">
-        <div class="intro-img"></div> <h1>Привет! Меня зовут Наташа.</h1>
+        <div class="intro-img"></div>
+        <h1>Привет! Меня зовут Наташа.</h1>
         <p>Я не теоретик, а практик: 6 лет снимаю и монтирую видео «в поле» — от свадеб до клипов.</p>
         <p>Моя фишка — быстро превращать хаос в историю, даже если исходники всего лишь трясущиеся кадры с телефона.</p>
         <p>На этом курсе не было лишней теории: только то, что работает. А здесь я собрала основные функции, чтобы первое время тебе было проще.</p>
@@ -234,6 +242,8 @@
             Пожалуйста, старайтесь не зумировать во время съемки, лучше сделать это в CapCut.
         </div>
         <p><i>И не забудьте проверить память телефона перед съемкой — мало что раздражает больше, чем внезапное «место закончилось» в самый ответственный момент!</i></p>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
     <div id="section-2" class="screen">
@@ -295,6 +305,8 @@
             <li>«Копировать» / «Удалить».</li>
             <li>«Разделить».</li>
         </ul>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
     <div id="section-3" class="screen">
@@ -352,6 +364,8 @@
         <div class="highlight">
             Главное правило: Чем проще переходы и четче нарезка – тем профессиональнее смотрится видео.
         </div>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
     <div id="section-4" class="screen">
@@ -393,6 +407,8 @@
             <li>Звуковые эффекты (перелистывание страниц, звон чашек): -15dB</li>
             <li>Применен фильтр "Podcast" в эквалайзере</li>
         </ol>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
     <div id="section-5" class="screen">
@@ -426,6 +442,8 @@
         <div class="highlight">
             Чек-лист: Проверьте, не перекрывает ли текст важные детали. Синхронизируйте анимацию с музыкой.
         </div>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
     <div id="section-6" class="screen">
@@ -465,6 +483,8 @@
             <li>Добавьте «Чёрные точки» (+10)</li>
             <li>Примените LUT «Recovery»</li>
         </ol>
+
+        <button class="btn-back btn-back-bottom" onclick="goToScreen('screen-menu')">← Меню</button>
     </div>
 
 </div>
